@@ -16,5 +16,7 @@ fetch('https://fakestoreapi.com/products').then((data) =>{
     })
     // console.log(tableData)
 
-    document.getElementById("table_body").innerHTML = tableData
+    document.getElementById("table_body").innerHTML = tableData;
+}).catch((error)=>{
+    console.error("Api data is not showing beacuse You are Facing:", error); 
 });
